@@ -1,1 +1,380 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono&display=swap");
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E01E3C), to(#2D324F));
+  background: linear-gradient(180deg, #E01E3C 0%, #2D324F 100%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background::after {
+  content: "";
+  background: url(../images/beats-logo.png);
+  background-size: cover;
+  opacity: 0.04;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.product {
+  margin: 144px auto 30px auto;
+  position: relative;
+  z-index: 99;
+  width: 414px;
+  min-height: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2D324F), color-stop(98.89%, #E01E3C));
+  background: linear-gradient(180deg, #2D324F 0%, #E01E3C 98.89%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.product__header {
+  position: absolute;
+  top: -78px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 280px;
+  height: 404px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E01E3C), to(#2D324F));
+  background: linear-gradient(180deg, #E01E3C 0%, #2D324F 100%);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__price {
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.product__colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 11px 0 0 0;
+}
+
+.product__color {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.product__color_black {
+  background-color: #000000;
+}
+
+.product__color_blue {
+  background-color: #29598D;
+}
+
+.product__color_green {
+  background-color: #49494D;
+}
+
+.product__color_current {
+  border: 1px solid #E01E3C;
+}
+
+.product__color:last-child {
+  margin-right: 0;
+}
+
+.product__color:hover {
+  opacity: 0.5;
+}
+
+.product__button {
+  width: 124px;
+  height: 52px;
+  background: #E01E3C;
+  border: 1px solid rgba(45, 50, 79, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.product__button:hover {
+  background: #990d22;
+}
+
+.product__content {
+  padding: 336px 20px 20px 20px;
+}
+
+.heading {
+  padding: 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading__title {
+  margin: 0;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.heading__title-sup {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.heading__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading__star {
+  width: 14px;
+  height: 13px;
+}
+
+.heading__reviews-count {
+  margin: 0 0 0 5px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.heading__w1-chip {
+  width: 33px;
+  height: 26px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__img {
+  margin-top: -49px;
+  width: 306px;
+  height: 306px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slider__counts {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider__count {
+  margin-right: 8px;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(242, 242, 242, 0.4);
+  cursor: pointer;
+}
+
+.slider__count:last-child {
+  margin-right: 0;
+}
+
+.slider__count_current {
+  background-color: #FFFFFF;
+}
+
+.about__text {
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.about__spoilers {
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__spoiler {
+  position: relative;
+  background: #2D324F;
+  -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 185px;
+  height: 33px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.about__spoiler:hover {
+  background: #1e2236;
+}
+
+.about__spoiler-plus {
+  width: 9px;
+  height: 21px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+
+.similiar__title {
+  margin: 15px 0 0 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.similiar__products {
+  margin: 15px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+}
+
+.similiar__image {
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.similiar__link {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.similiar__link:hover .similiar__image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */
