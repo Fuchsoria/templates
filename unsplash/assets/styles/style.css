@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.11%, #E91E63), color-stop(98.33%, #BB6BD9));
+  background: linear-gradient(180deg, #E91E63 1.11%, #BB6BD9 98.33%);
+  overflow: hidden;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 160px auto 80px auto;
+  max-width: 999px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.collections {
+  background: url(../images/coffee.png);
+  background-size: cover;
+  width: 600px;
+}
+
+.collections__background {
+  width: 600px;
+  min-height: 600px;
+  background: rgba(51, 51, 51, 0.7);
+}
+
+.collections__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 0 20px;
+}
+
+.collections__button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.collections__button_red {
+  background: #ED7161;
+}
+
+.collections__button_yellow {
+  background: #EFC41A;
+}
+
+.collections__button_green {
+  background: #4FBA6E;
+}
+
+.header__title {
+  margin: 40px auto 0 auto;
+  width: 326px;
+  font-family: Open Sans;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header__sub-title {
+  margin: 20px auto 0 auto;
+  width: 326px;
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.content {
+  margin: 20px 0 0 0;
+}
+
+.content__collections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__polygons {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__polygon {
+  opacity: 0.4;
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.content__polygon:nth-child(2n) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.content__polygon_active {
+  opacity: 1;
+}
+
+.collection {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.collection__background {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection__content {
+  width: 240px;
+  height: 240px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 25px 20px 25px;
+  position: relative;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background: rgba(242, 242, 242, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collection__title {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F4F4F;
+}
+
+.collection__text {
+  margin: 0;
+  padding: 5px 0;
+  font-family: Open Sans;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4F4F4F;
+  font-weight: 600;
+}
+
+.collection__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.collection__image {
+  margin: 0 10px 0 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection__link-text {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 10px;
+  line-height: 12px;
+  color: #4F4F4F;
+  font-weight: 700;
+}
+
+.collection_right {
+  margin: 86px 0 0 -10px;
+  position: relative;
+  z-index: 15;
+}
+/*# sourceMappingURL=style.css.map */
