@@ -16,7 +16,7 @@
   <div class="page">
     <div class="container">
       <div class="row">
-        <div class="collections">
+        <section class="collections">
           <div class="collections__background">
             <div class="collections__buttons">
               <div class="collections__button collections__button_red"></div>
@@ -78,8 +78,24 @@
 
             </main>
           </div>
-        </div>
-        <div class="login"></div>
+        </section>
+        <section class="login">
+          <img src="assets/images/camera.svg" alt="Camera" class="login__logo">
+          <h2 class="login__title">Unsplash</h2>
+          <h2 class="login__subtitle">Free (do whatever you want) high-resolution photos.</h2>
+          <form class="form">
+            <label>
+              <h4 class="form__label">Email Address</h4>
+              <input type="email" class="form__input form__input_email">
+            </label>
+            <label>
+              <h4 class="form__label">Password <a href="#" class="form__link">(Forgot?)</a></h4>
+              <input type="password" class="form__input form__input_password">
+            </label>
+            <button type="submit" class="form__login-btn">Login</button>
+            <h4 class="form__signup-link">Don't have an account? <a href="#" class="form__link">Join</a></h4>
+          </form>
+        </section>
       </div>
     </div>
 </body>
