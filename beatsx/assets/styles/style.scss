@@ -220,16 +220,20 @@ body {
     justify-content: center;
   }
 
-  &__count {
-    margin-right: 8px;
-    width: 16px;
-    height: 2px;
-    background-color: rgba(242, 242, 242, 0.4);
+  &__link {
+    padding: 5px 0;
     cursor: pointer;
+    margin-right: 8px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__count {
+    width: 16px;
+    height: 2px;
+    background-color: rgba(242, 242, 242, 0.4);
 
     &_current {
       background-color: #FFFFFF;
